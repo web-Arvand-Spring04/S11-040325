@@ -14,6 +14,9 @@
       integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
       crossorigin="anonymous"
     />
+    <!-- aos css cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
     <title>آکادمی کامپیدان</title>
@@ -129,9 +132,9 @@
       <h3 class="lalezar text-center">آخرین دوره های کامپیدان</h3>
       <p class="text-center">سکوی پرتاب شما به سمت موفقیت</p>
       <div class="container">
-        <div class="row gy-3">
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card">
+        <div class="row gy-3 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col">
+            <div class="card" data-aos="flip-left" data-aos-duration="3000">
               <img src="assets/img/laravel.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold">وب سوکت در لاراول با Reverb</h5>
@@ -146,8 +149,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card">
+          <div class="col">
+            <div class="card" data-aos="flip-left">
               <img src="assets/img/laravel.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold">وب سوکت در لاراول با Reverb</h5>
@@ -162,8 +165,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card">
+          <div class="col">
+            <div class="card" data-aos="flip-left">
               <img src="assets/img/laravel.svg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title fs-6 fw-bold">وب سوکت در لاراول با Reverb</h5>
@@ -177,12 +180,46 @@
                 </div>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
       </div>
     </section>
     <!-- آخرین دوره های کامپیدان پایان-->
 
+    <!-- بخش آمار -->
+    <section class="mt-5">
+      <h3 class="text-center lalezar">آمارها باعث افتخار ما هستند</h3>
+      <p class="text-center">هیچ توانستنی اتفاقی نیست</p>
+      <div class="container">
+        <div class="row ">
+          <div class="col">
+            <div class="Statcard text-center p-3 rounded shadow">
+              <p class="h1">5500</p>
+              <p class="h5">دانشجو</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="Statcard text-center p-3 rounded shadow">
+              <p class="h1 purecounter" data-purecounter-start="10" data-purecounter-end="5500">5500</p>
+              <p class="h5">دانشجو</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="Statcard text-center p-3 rounded shadow">
+              <p class="h1">5500</p>
+              <p class="h5">دانشجو</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="Statcard text-center p-3 rounded shadow">
+              <p class="h1">5500</p>
+              <p class="h5">دانشجو</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- بخش آمار پایان -->
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
@@ -191,6 +228,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
